@@ -1,0 +1,24 @@
+[project]
+name = "prompt-optimization-evidence-pack"
+version = "0.1.0"
+description = "A pre-registered prompt-optimization experiment on a patient-communication triage agent: turning unreliable LLM output into governed, schema-validated actions with measured before/after evidence."
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic>=2.0",
+    "openai>=1.0",   # talks to any OpenAI-compatible endpoint (Ollama / vLLM / Modal)
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+hosted = ["anthropic>=0.39"]  # optional second arm: hosted Claude
+dev = ["pytest>=7.0"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["pack*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

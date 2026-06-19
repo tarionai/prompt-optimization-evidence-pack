@@ -1,0 +1,5 @@
+# Preserve every file's exact bytes so SHA256SUMS verifies byte-for-byte on every
+# platform. The frozen result fixtures were hashed with their original line endings;
+# applying EOL conversion on checkout would change those bytes and break the manifest,
+# so git performs no line-ending normalization here.
+* -text
