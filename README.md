@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/social-card.png" alt="Prompt Engineering Evidence Pack — change only the prompt, move safety 0% to 62-96%" width="100%">
+</p>
+
 # Prompt Engineering Evidence Pack — patient-message triage agent
 
 **A measured demonstration of prompt engineering on a healthcare-style agent.** Same
